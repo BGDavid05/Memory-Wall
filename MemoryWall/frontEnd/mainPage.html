@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Memory Wall</title>
+    <link rel="stylesheet" href="./styles/Main/global.css">
+    <link rel="stylesheet" href="./styles/Main/sidebar.css">
+    <link rel="stylesheet" href="./styles/Main/main_content.css">
+    <link rel="stylesheet" href="./styles/Memories/memories.css">
+    <link rel="stylesheet" href="./styles/Memories/modal.css">
+    <link rel="stylesheet" href="./styles/Photos/photos.css">
+    <link rel="stylesheet" href="./styles/Photos/modal.css">
+
+
+  </head>
+  <body>
+    
+    <div class="sidebar">
+      <div class="sidebar-item active" data-view="memories">Memories</div>
+      <div class="sidebar-item inactive" data-view="photos">Photos</div>
+      <button id="dark-mode-toggle">🌙 Dark Mode</button>
+    </div>
+  
+    <!-- Main Content -->
+    <div class="main-content">
+        <!-- Memories View -->
+        <div id="memories-view">
+            <div class="header">
+                <div class="title">Memory Wall</div>
+                <button class="add-button">Add Button</button>
+            </div>
+            
+            <div class="memories-grid">
+                <!-- Memory cards will be generated here by JS -->
+                <div class="loading">Loading memories...</div>
+            </div>
+        </div>
+
+        <!-- Photos View -->
+        <div id="photos-view">
+          <div class="header">
+              <div class="title">Your Photo Memories</div>
+              <button class="add-button-photo">Add Photo</button>
+          </div>
+          
+          <div class="photos-grid"> 
+            <!-- Photo cards will be generated here by JS -->
+          </div>
+        </div>
+
+
+    </div>
+
+    <script type="module" src="./data/memories.js"></script>
+    <script type="module" src="./data/photos.js"></script>
+    <script type="module" src="./scripts/memoriesPage.js"></script>
+    <script type="module" src="./scripts/photosPage.js"></script>
+    <script type="module" src="./scripts/view.js"></script>
+    <script type="module" src="./scripts/main.js"></script>
+    <script type="module" src="./scripts/dark_mode.js"></script>
+  
+  </body>
+</html>

@@ -1,0 +1,78 @@
+.main-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    background-color: #fafafa;
+    margin-left: 230px;
+    padding: 20px;
+}
+
+.header {
+    padding: 20px 24px;
+    border-bottom: 1px solid #eaeaea;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+}
+
+.title {
+    font-size: 24px;
+    font-weight: 600;
+    color: #333;
+}
+
+.add-button-photo,
+.add-button {
+    padding: 10px 20px;
+    background-color: #4285f4;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: 500;
+    transition: background-color 0.2s ease;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.add-button-photo,
+.add-button:hover {
+    background-color: #3367d6;
+}
+
+.add-button-photo,
+.add-button:active {
+    background-color: #2a56c6;
+    transform: translateY(3px);
+}
+
+/* Dark mode support */
+body.dark-mode .main-content {
+    background-color: #111827;
+}
+
+body.dark-mode .header {
+    background-color: #1f2937;
+    border-bottom-color: #374151;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+body.dark-mode .title {
+    color: #f3f4f6;
+}
+
+body.dark-mode .add-button-photo,
+body.dark-mode .add-button {
+    background-color: #3b82f6;
+}
+
+body.dark-mode .add-button-photo,
+body.dark-mode .add-button:hover {
+    background-color: #2563eb;
+}
+
+body.dark-mode .add-button-photo,
+body.dark-mode .add-button:active {
+    background-color: #1d4ed8;
+}

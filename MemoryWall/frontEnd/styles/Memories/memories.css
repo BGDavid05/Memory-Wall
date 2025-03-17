@@ -1,0 +1,142 @@
+.memories-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    overflow-y: auto;
+}
+
+.memory-card {
+    border: 1px solid lightgray;
+    border-radius: 10px;
+    overflow: hidden;
+    height: 280px;
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    background-color: white;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+.memory-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 15px rgba(0,0,0,0.1);
+}
+
+.memory-image {
+    height: 60%;
+    background-color: whitesmoke;
+    border-bottom: 1px solid lightgray;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    position: relative;
+}
+
+.memory-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.memory-card:hover .memory-image img {
+    transform: scale(1.05);
+}
+
+.memory-details {
+    padding: 15px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.memory-title {
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: black;
+    font-size: 16px;
+    line-height: 1.3;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.memory-date {
+    color: gray;
+    font-size: 14px;
+}
+
+.memory-days {
+    color: royalblue;
+    font-size: 13px;
+    margin-top: 8px;
+    font-weight: bold;
+}
+
+.memory-actions {
+    display: flex;
+    padding: 8px 10px;
+    border-top: 1px solid #eee;
+    background-color: whitesmoke;
+}
+
+.memory-actions button {
+    flex: 1;
+    padding: 5px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 13px;
+    color: gray;
+    border-radius: 4px;
+    transition: background-color 0.2s, color 0.2s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4px;
+}
+
+.memory-actions button:hover {
+    background-color: aliceblue;
+    color: royalblue;
+}
+
+/* Sötét mód támogatás */
+body.dark-mode .memory-card {
+    background-color: #222;
+    border-color: #444;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+}
+
+body.dark-mode .memory-image {
+    background-color: #111;
+    border-bottom-color: #444;
+}
+
+body.dark-mode .memory-title {
+    color: white;
+}
+
+body.dark-mode .memory-date {
+    color: lightgray;
+}
+
+body.dark-mode .memory-days {
+    color: lightskyblue;
+}
+
+body.dark-mode .memory-actions {
+    background-color: #333;
+    border-top-color: #444;
+}
+
+body.dark-mode .memory-actions button {
+    color: lightgray;
+}
+
+body.dark-mode .memory-actions button:hover {
+    background-color: #444;
+    color: lightskyblue;
+}
