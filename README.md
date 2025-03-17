@@ -30,6 +30,6 @@ This project is a web-based application for managing memories and photos. Users 
 5. 🌙 Toggle **Dark Mode** using the switch button.
 
 ## 🛠️ Technologies Used
-- 🟡 **JavaScript**: Core scripting language.
-- 💾 **Python (flask)**: Saves the memories and imgs in a database
-- 🎨 **HTML & CSS**: UI design and styling.
+-  **JavaScript**: Core scripting language.
+-  **Python (flask)**: Saves the memories and imgs in a database
+-  **HTML & CSS**: UI design and styling.
