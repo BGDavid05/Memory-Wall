@@ -10,9 +10,6 @@ This project is a web-based application for managing memories and photos. Users 
 - 🖼️ **Photos Management**: Upload, delete, and browse photos.
 - 🔀 **Navigation System**: Seamless switching between the memories and photos views.
 
-## 📂 File Structure
-
-
 ## ⚙️ Installation & Setup
 1. Clone the repository:
    ```sh
